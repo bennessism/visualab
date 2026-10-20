@@ -1,0 +1,50 @@
+[
+  {
+    "id": "motion",
+    "name": "Motion Illusions",
+    "icon": "↻",
+    "accent": "#72d9ff",
+    "description": "Why movement can appear to reverse, continue, or arise from a still pattern.",
+    "intro": "Motion perception combines changing image information, attention, and assumptions about the world. These demonstrations reveal how a moving—or entirely stationary—image can make the visual system infer movement."
+  },
+  {
+    "id": "ambiguous",
+    "name": "Ambiguous Perception",
+    "icon": "◈",
+    "accent": "#d1a5ff",
+    "description": "One image, multiple ways to see it.",
+    "intro": "Some pictures allow two stable interpretations. Our perception may alternate even when the stimulus does not change, revealing that seeing involves active interpretation."
+  },
+  {
+    "id": "color",
+    "name": "Color & Brightness",
+    "icon": "◉",
+    "accent": "#ffbd72",
+    "description": "Color is influenced by the light and shapes around it.",
+    "intro": "Color and brightness are not measured in isolation by our visual system. Context and adaptation can make identical values appear surprisingly different."
+  },
+  {
+    "id": "geometry",
+    "name": "Geometry & Size",
+    "icon": "◇",
+    "accent": "#88e1ae",
+    "description": "How context alters judgments of length, shape, and size.",
+    "intro": "Our brains interpret geometry using contextual cues. Equal segments may appear unequal, and straight lines may appear slanted."
+  },
+  {
+    "id": "depth",
+    "name": "Depth & Perspective",
+    "icon": "▣",
+    "accent": "#ff92b4",
+    "description": "How a flat image becomes a convincing sense of space.",
+    "intro": "We infer three-dimensional structure from shading, perspective, motion, and prior experience. When cues conflict, perception may be strikingly wrong."
+  },
+  {
+    "id": "attention",
+    "name": "Attention & Awareness",
+    "icon": "✳",
+    "accent": "#ffe179",
+    "description": "What we notice, overlook, and see fade away.",
+    "intro": "Vision is selective. Attention, eye movements, and neural adaptation change which parts of the world reach awareness."
+  }
+]
