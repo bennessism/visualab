@@ -49,7 +49,6 @@ export function mountDemo(id,stage,{motionAllowed=true}={}){
  }
  if(playing)frame++;
  }
- raf=requestAnimationFrame(loop);
  function loop(){if(!active)return;draw();raf=requestAnimationFrame(loop)}
  // Each instance owns its animation loop and cleans it up on navigation.
  loop();
