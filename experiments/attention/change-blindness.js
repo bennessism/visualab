@@ -1,3 +1,42 @@
 import {animate} from '../../js/animation-core.js';
-export function mount(stage,options){return animate(stage,({ctx,w,h,cx,cy,R,t,frame,speed,reveal})=>{ctx.fillStyle='#223c58';ctx.fillRect(cx-R,cy-R,R*2,R*2);ctx.fillStyle='#87d3e2';ctx.fillRect(cx-R*.6,cy-R*.7,R*.8,R*.7);ctx.fillStyle='#f8ba72';if(Math.floor(frame/85)%3!==1)ctx.beginPath(),ctx.arc(cx+R*.48,cy+R*.25,25,0,7),ctx.fill();ctx.fillStyle='#fff';ctx.font='14px system-ui';ctx.fillText('Find the changing shape',cx-R*.8,cy+R*.85)
-},options)}
+
+// The library card and detail page render exactly the same scene.
+// All dimensions are relative to the stage, with no text covering the effect.
+export function mount(stage, options) {
+  return animate(stage, ({ctx, cx, cy, R, frame, reveal}) => {
+    ctx.save();
+    const size = R * 1.95;
+    const left = cx - size / 2;
+    const top = cy - size / 2;
+
+    ctx.fillStyle = '#223c58';
+    ctx.fillRect(left, top, size, size);
+
+    ctx.fillStyle = '#87d3e2';
+    ctx.fillRect(left + size * .20, top + size * .18, size * .36, size * .36);
+
+    // A brief blank interval makes the change harder to notice.
+    const phase = frame % 190;
+    const visible = phase < 88 || (phase >= 100 && phase < 183);
+    if (visible) {
+      // Keep the same large circle in both previews and detail.
+      // Its subtle position changes between the two exposures.
+      const shifted = phase >= 100;
+      const radius = size * .22;
+      const x = left + size * (shifted ? .735 : .71);
+      const y = top + size * .67;
+      ctx.fillStyle = '#f8ba72';
+      ctx.beginPath();
+      ctx.arc(x, y, radius, 0, Math.PI * 2);
+      ctx.fill();
+      if (reveal) {
+        ctx.strokeStyle = '#ffffff';
+        ctx.lineWidth = Math.max(1, R * .012);
+        ctx.beginPath();
+        ctx.arc(left + size * .71, y, radius * 1.18, 0, Math.PI * 2);
+        ctx.stroke();
+      }
+    }
+    ctx.restore();
+  }, options);
+}
