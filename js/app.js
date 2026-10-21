@@ -5,7 +5,7 @@ const esc=s=>String(s??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'
 const cat=id=>categories.find(x=>x.id===id);
 const url=(type,id)=>'#/'+type+'/'+encodeURIComponent(id);
 const motionAllowed=()=>!matchMedia('(prefers-reduced-motion: reduce)').matches;
-const header=()=>'<header class="site-header"><div class="shell head-inner"><a class="brand" href="#/">VISUA<span>LAB</span></a><nav class="nav"><a href="#/">Home</a><a href="#/library">All phenomena</a><a href="#/about">About</a></nav></div></header>';
+const header=()=>'<header class="site-header"><div class="shell head-inner"><a class="brand" href="#/">VISUA<span>LAB</span></a><nav class="nav"><a href="#/">Home</a><a href="#/about">About</a></nav></div></header>';
 const footer=()=>'<footer class="footer"><div class="shell"><span>© Visualab · Explore the science of seeing</span><span>Interactive visual knowledge library</span></div></footer>';
 const catCard=c=>'<a class="category-card" style="--accent:'+esc(c.accent)+'" href="'+'#/library?category='+encodeURIComponent(c.id)+'"><span class="cat-symbol">'+esc(c.icon)+'</span><h3>'+esc(c.name)+'</h3><p>'+esc(c.description)+'</p><span class="card-bottom">'+phenomena.filter(p=>p.category===c.id).length+' phenomena →</span></a>';
 const card=p=>'<a class="phen-card" href="'+url('phenomenon',p.id)+'"><div class="preview" data-preview="'+esc(p.id)+'"></div><div class="phen-body"><span class="tag">'+esc(p.mode)+' · '+esc(cat(p.category)?.name||'Visual')+'</span><h3>'+esc(p.title)+'</h3><p>'+esc(p.summary)+'</p></div></a>';
