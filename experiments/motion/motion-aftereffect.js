@@ -1,0 +1,3 @@
+import {animate} from '../../js/animation-core.js';
+export function mount(stage,options){return animate(stage,({ctx,w,h,cx,cy,R,t,frame,speed,reveal})=>{const stripeW=30,cycle=stripeW*2,offset=((frame*(speed/50)*2.2)%cycle+cycle)%cycle;for(let x=-cycle;x<w+cycle;x+=cycle){ctx.fillStyle='#182841';ctx.fillRect(x-offset,0,stripeW,h);ctx.fillStyle='#8ee2f8';ctx.fillRect(x+stripeW-offset,0,stripeW,h)}ctx.strokeStyle='#f3f7fc';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(cx-10,cy);ctx.lineTo(cx+10,cy);ctx.moveTo(cx,cy-10);ctx.lineTo(cx,cy+10);ctx.stroke()
+},options)}

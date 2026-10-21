@@ -8,7 +8,8 @@
     "tryIt": "Watch the sphere without focusing on a single dot. Can you perceive either direction?",
     "how": "Because the dots provide ambiguous front–back depth information, the same two-dimensional motion can support opposite three-dimensional rotations.",
     "terms": "Bistable perception · structure from motion",
-    "demo": "sphere"
+    "demo": "sphere",
+    "module": "experiments/motion/ambiguous-rotation.js"
   },
   {
     "id": "peripheral-drift",
@@ -19,7 +20,8 @@
     "tryIt": "Scan around the image rather than staring at its center.",
     "how": "Certain luminance and color arrangements combined with small eye movements can produce apparent motion. The image itself is stationary.",
     "terms": "Peripheral drift illusion",
-    "demo": "drift"
+    "demo": "drift",
+    "module": "experiments/motion/peripheral-drift.js"
   },
   {
     "id": "motion-aftereffect",
@@ -30,7 +32,8 @@
     "tryIt": "Watch the moving stripes for about 15 seconds, then press Pause and inspect them.",
     "how": "Prolonged exposure to motion adapts direction-sensitive visual mechanisms, creating a temporary aftereffect.",
     "terms": "Motion aftereffect · waterfall illusion",
-    "demo": "stripes"
+    "demo": "stripes",
+    "module": "experiments/motion/motion-aftereffect.js"
   },
   {
     "id": "wagon-wheel",
@@ -41,7 +44,8 @@
     "tryIt": "Change the wheel speed and watch the spokes.",
     "how": "Repeated spoke patterns and temporal sampling can make the apparent rotational direction ambiguous, especially under periodic illumination or video sampling.",
     "terms": "Temporal aliasing · wagon-wheel effect",
-    "demo": "wheel"
+    "demo": "wheel",
+    "module": "experiments/motion/wagon-wheel.js"
   },
   {
     "id": "necker-cube",
@@ -52,7 +56,8 @@
     "tryIt": "Look at the cube. Which of the two square faces is nearest? Try switching it.",
     "how": "The drawing omits reliable depth cues, so the brain can organize its edges into two competing three-dimensional interpretations.",
     "terms": "Reversible figure · bistable perception",
-    "demo": "cube"
+    "demo": "cube",
+    "module": "experiments/ambiguous/necker-cube.js"
   },
   {
     "id": "rubins-vase",
@@ -63,7 +68,8 @@
     "tryIt": "Look at the central white region and then the black regions.",
     "how": "The same boundary can be assigned to different figures, changing which region appears to be foreground.",
     "terms": "Figure–ground reversal",
-    "demo": "vase"
+    "demo": "vase",
+    "module": "experiments/ambiguous/rubins-vase.js"
   },
   {
     "id": "duck-rabbit",
@@ -74,7 +80,8 @@
     "tryIt": "Imagine the left side as a bill; then reinterpret it as ears.",
     "how": "A single ambiguous outline activates multiple meaningful object interpretations.",
     "terms": "Ambiguous figure",
-    "demo": "duck"
+    "demo": "duck",
+    "module": "experiments/ambiguous/duck-rabbit.js"
   },
   {
     "id": "spinning-dancer",
@@ -85,7 +92,8 @@
     "tryIt": "Watch the simplified figure and imagine a reversal.",
     "how": "When depth cues are weak, the brain may interpret the silhouette’s rotation in either direction. Not everyone experiences a switch.",
     "terms": "Bistable motion perception",
-    "demo": "dancer"
+    "demo": "dancer",
+    "module": "experiments/ambiguous/spinning-dancer.js"
   },
   {
     "id": "simultaneous-contrast",
@@ -96,7 +104,8 @@
     "tryIt": "Compare the two central gray squares. Use Reveal to check.",
     "how": "Surrounding luminance alters how bright an identical central patch appears.",
     "terms": "Simultaneous brightness contrast",
-    "demo": "contrast"
+    "demo": "contrast",
+    "module": "experiments/color/simultaneous-contrast.js"
   },
   {
     "id": "checker-shadow",
@@ -107,7 +116,8 @@
     "tryIt": "Compare the two marked patches in the demonstration.",
     "how": "The visual system estimates surface reflectance while accounting for illumination and context.",
     "terms": "Lightness constancy",
-    "demo": "checker"
+    "demo": "checker",
+    "module": "experiments/color/checker-shadow.js"
   },
   {
     "id": "afterimage",
@@ -118,7 +128,8 @@
     "tryIt": "Fixate on the colored disk, then switch to a pale background.",
     "how": "Visual adaptation changes the sensitivity of color-opponent responses, briefly producing complementary afterimages.",
     "terms": "Negative afterimage · chromatic adaptation",
-    "demo": "afterimage"
+    "demo": "afterimage",
+    "module": "experiments/color/afterimage.js"
   },
   {
     "id": "whites-illusion",
@@ -129,7 +140,8 @@
     "tryIt": "Compare gray areas embedded in contrasting stripes.",
     "how": "Their appearance depends on spatial organization and surrounding luminance; simple local contrast alone does not explain every case.",
     "terms": "White’s illusion",
-    "demo": "whites"
+    "demo": "whites",
+    "module": "experiments/color/whites-illusion.js"
   },
   {
     "id": "muller-lyer",
@@ -140,7 +152,8 @@
     "tryIt": "Decide which horizontal segment is longer, then reveal their endpoints.",
     "how": "Arrowhead configurations influence perceived extent, even when the central segments have equal physical lengths.",
     "terms": "Müller–Lyer illusion",
-    "demo": "muller"
+    "demo": "muller",
+    "module": "experiments/geometry/muller-lyer.js"
   },
   {
     "id": "ponzo",
@@ -151,7 +164,8 @@
     "tryIt": "Which horizontal bar appears longer?",
     "how": "Converging context lines suggest distance, altering the apparent scale of equal image lengths.",
     "terms": "Ponzo illusion · size constancy",
-    "demo": "ponzo"
+    "demo": "ponzo",
+    "module": "experiments/geometry/ponzo.js"
   },
   {
     "id": "ebbinghaus",
@@ -162,7 +176,8 @@
     "tryIt": "Compare the two orange central circles.",
     "how": "Surrounding circle sizes and spacing shift the perceived relative size of the center.",
     "terms": "Ebbinghaus illusion",
-    "demo": "ebbinghaus"
+    "demo": "ebbinghaus",
+    "module": "experiments/geometry/ebbinghaus.js"
   },
   {
     "id": "cafe-wall",
@@ -173,7 +188,8 @@
     "tryIt": "Follow the thin dividing lines with your eyes.",
     "how": "Staggered high-contrast tiles and mortar lines affect local orientation signals.",
     "terms": "Café wall illusion",
-    "demo": "cafe"
+    "demo": "cafe",
+    "module": "experiments/geometry/cafe-wall.js"
   },
   {
     "id": "kinetic-depth",
@@ -184,7 +200,8 @@
     "tryIt": "Watch the rotating dot cloud and imagine its front and back swapping.",
     "how": "Motion supplies information about three-dimensional structure, even when ordinary depth cues are missing.",
     "terms": "Kinetic depth effect · structure from motion",
-    "demo": "sphere"
+    "demo": "sphere",
+    "module": "experiments/depth/kinetic-depth.js"
   },
   {
     "id": "hollow-face",
@@ -195,7 +212,8 @@
     "tryIt": "Examine the shaded facial mask and compare possible depth interpretations.",
     "how": "Strong prior expectations that faces protrude can outweigh inconsistent depth cues.",
     "terms": "Hollow-face illusion",
-    "demo": "face"
+    "demo": "face",
+    "module": "experiments/depth/hollow-face.js"
   },
   {
     "id": "ames-room",
@@ -206,7 +224,8 @@
     "tryIt": "Inspect the forced-perspective room drawing.",
     "how": "A specially shaped room viewed from one point can mimic ordinary rectangular geometry, biasing size judgments.",
     "terms": "Forced perspective · Ames room",
-    "demo": "ames"
+    "demo": "ames",
+    "module": "experiments/depth/ames-room.js"
   },
   {
     "id": "impossible-trident",
@@ -217,7 +236,8 @@
     "tryIt": "Trace the prongs from one end to the other.",
     "how": "Local depth interpretations conflict when the whole picture is considered.",
     "terms": "Impossible object · blivet",
-    "demo": "trident"
+    "demo": "trident",
+    "module": "experiments/depth/impossible-trident.js"
   },
   {
     "id": "troxler-fading",
@@ -228,7 +248,8 @@
     "tryIt": "Stare at the central cross without moving your gaze for 15–30 seconds.",
     "how": "Stable peripheral stimulation can become less noticeable through adaptation and limited eye-motion refresh.",
     "terms": "Troxler fading",
-    "demo": "troxler"
+    "demo": "troxler",
+    "module": "experiments/attention/troxler-fading.js"
   },
   {
     "id": "blind-spot",
@@ -239,7 +260,8 @@
     "tryIt": "Close your left eye, stare at the left cross with your right eye, and change viewing distance.",
     "how": "The optic disc has no photoreceptors; the visual system fills in the missing region.",
     "terms": "Physiological blind spot",
-    "demo": "blindspot"
+    "demo": "blindspot",
+    "module": "experiments/attention/blind-spot.js"
   },
   {
     "id": "motion-induced-blindness",
@@ -250,7 +272,8 @@
     "tryIt": "Fixate at the center while attending to the colored target.",
     "how": "A moving visual surround can suppress awareness of otherwise visible stationary targets.",
     "terms": "Motion-induced blindness",
-    "demo": "mid"
+    "demo": "mid",
+    "module": "experiments/attention/motion-induced-blindness.js"
   },
   {
     "id": "change-blindness",
@@ -261,6 +284,7 @@
     "tryIt": "Watch two scenes alternate with a blank interval and try to detect what changes.",
     "how": "Interruptions can prevent reliable comparison between successive scenes, especially without focused attention.",
     "terms": "Change blindness · flicker paradigm",
-    "demo": "change"
+    "demo": "change",
+    "module": "experiments/attention/change-blindness.js"
   }
 ]

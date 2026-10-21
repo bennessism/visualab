@@ -1,0 +1,3 @@
+import {wrap,line,circ,rect,poly} from '../../js/visual-utils.js';
+export function mount(stage){let reveal=false;function draw(){const blue='#9cdef8',gold='#ffb469',pink='#ec9bcf';let s='';s='<path d="M75 134 L181 157 L83 185 L189 181 Q218 224 266 231 Q285 261 322 269 Q365 279 401 246 Q435 213 423 170 Q410 121 361 111 Q326 103 297 116 Q277 104 253 109 Q231 106 208 122 L110 93 L176 143 Z" fill="#e2d0ec" stroke="#698aa8" stroke-width="4" stroke-linejoin="round"/>'+circ(332,153,7,'#17233b')+'<path d="M181 157 Q191 164 189 181" fill="none" stroke="#698aa8" stroke-width="3"/>'
+stage.innerHTML=wrap(s)}draw();return {animated:false,play(){},pause(){},speed(){},reveal(){reveal=!reveal;draw();return reveal},reset(){reveal=false;draw()},destroy(){stage.replaceChildren()}}}

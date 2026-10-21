@@ -1,0 +1,3 @@
+import {animate} from '../../js/animation-core.js';
+export function mount(stage,options){return animate(stage,({ctx,w,h,cx,cy,R,t,frame,speed,reveal})=>{for(let i=0;i<95;i++){let a=i*2.39996+t*.25,r=Math.sqrt((i+.5)/95)*R*1.45;ctx.fillStyle='#7ca4c0';ctx.beginPath();ctx.arc(cx+Math.cos(a)*r,cy+Math.sin(a)*r,2.5,0,7);ctx.fill()}ctx.fillStyle='#ffa362';ctx.beginPath();ctx.arc(cx+R*.65,cy-R*.4,9,0,7);ctx.fill();ctx.fillStyle='#fff';ctx.fillText('+',cx-4,cy+5)
+},options)}

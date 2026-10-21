@@ -1,0 +1,3 @@
+import {wrap,line,circ,rect,poly} from '../../js/visual-utils.js';
+export function mount(stage){let reveal=false;function draw(){const blue='#9cdef8',gold='#ffb469',pink='#ec9bcf';let s='';s='';for(const g of [{x:172,r:15,d:69},{x:425,r:37,d:100}]){for(let i=0;i<8;i++){let a=i*Math.PI/4;s+=circ(g.x+Math.cos(a)*g.d,180+Math.sin(a)*g.d,g.r,'#84b7eb')}s+=circ(g.x,180,29,'#ffb36f')}if(reveal)s+=line(172,180,425,180,'#8be5b7',2)
+stage.innerHTML=wrap(s)}draw();return {animated:false,play(){},pause(){},speed(){},reveal(){reveal=!reveal;draw();return reveal},reset(){reveal=false;draw()},destroy(){stage.replaceChildren()}}}

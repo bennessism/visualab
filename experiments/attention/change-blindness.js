@@ -1,0 +1,3 @@
+import {animate} from '../../js/animation-core.js';
+export function mount(stage,options){return animate(stage,({ctx,w,h,cx,cy,R,t,frame,speed,reveal})=>{ctx.fillStyle='#223c58';ctx.fillRect(cx-R,cy-R,R*2,R*2);ctx.fillStyle='#87d3e2';ctx.fillRect(cx-R*.6,cy-R*.7,R*.8,R*.7);ctx.fillStyle='#f8ba72';if(Math.floor(frame/85)%3!==1)ctx.beginPath(),ctx.arc(cx+R*.48,cy+R*.25,25,0,7),ctx.fill();ctx.fillStyle='#fff';ctx.font='14px system-ui';ctx.fillText('Find the changing shape',cx-R*.8,cy+R*.85)
+},options)}

@@ -1,0 +1,3 @@
+import {wrap,line,circ,rect,poly} from '../../js/visual-utils.js';
+export function mount(stage){let reveal=false;function draw(){const blue='#9cdef8',gold='#ffb469',pink='#ec9bcf';let s='';s='<path d="M110 115 H350 Q388 115 388 151 V210 M110 180 H326 Q365 180 365 218 V250 M110 245 H400 Q440 245 440 201 V150" fill="none" stroke="#a8daee" stroke-width="35" stroke-linecap="round"/>'
+stage.innerHTML=wrap(s)}draw();return {animated:false,play(){},pause(){},speed(){},reveal(){reveal=!reveal;draw();return reveal},reset(){reveal=false;draw()},destroy(){stage.replaceChildren()}}}
