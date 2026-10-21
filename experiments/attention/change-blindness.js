@@ -20,12 +20,13 @@ export function mount(stage, options) {
     const visible = phase < 88 || (phase >= 100 && phase < 183);
     if (visible) {
       // Keep the same large circle in both previews and detail.
-      // Its subtle position changes between the two exposures.
-      const shifted = phase >= 100;
+      // Keep its position and dimensions locked across both clips.
+      // Only the fill color changes, eliminating perceived vertical jitter.
+      const changed = phase >= 100;
       const radius = size * .22;
-      const x = left + size * (shifted ? .735 : .71);
+      const x = left + size * .71;
       const y = top + size * .67;
-      ctx.fillStyle = '#f8ba72';
+      ctx.fillStyle = changed ? '#f5a95f' : '#f8ba72';
       ctx.beginPath();
       ctx.arc(x, y, radius, 0, Math.PI * 2);
       ctx.fill();
