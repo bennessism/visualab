@@ -48,6 +48,30 @@
     "module": "experiments/motion/wagon-wheel.js"
   },
   {
+    "id": "barber-pole",
+    "title": "Barber Pole Illusion",
+    "category": "motion",
+    "mode": "animated",
+    "summary": "Diagonal stripes moving behind a narrow opening seem to travel along the pole.",
+    "tryIt": "Watch the stripes through the vertical opening. Pause, then change the speed to see how the apparent motion is guided by the frame.",
+    "how": "Although the striped pattern moves diagonally, the aperture hides much of its direction information. Motion signals at the aperture edges bias the perceived movement along the opening.",
+    "terms": "Barber-pole illusion · aperture problem · motion integration",
+    "demo": "barber",
+    "module": "experiments/motion/barber-pole.js"
+  },
+  {
+    "id": "point-light-walker",
+    "title": "Point-Light Walker",
+    "category": "motion",
+    "mode": "animated",
+    "summary": "A small set of moving dots can reveal the unmistakable movement of a walking person.",
+    "tryIt": "Watch the dots move together, then pause. Can you still recognize a person when the movement stops?",
+    "how": "Coordinated motion of points at the joints provides strong cues to a body's structure and actions, even with no visible outline or surface.",
+    "terms": "Biological motion · point-light display · Johansson walker",
+    "demo": "walker",
+    "module": "experiments/motion/point-light-walker.js"
+  },
+  {
     "id": "necker-cube",
     "title": "Necker Cube",
     "category": "ambiguous",
